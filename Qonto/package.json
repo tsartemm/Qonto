@@ -1,9 +1,12 @@
 {
   "type": "module",
-  "devDependencies": {
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
-    "typescript": "^5.9.2"
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js",
+    "build": "echo \"no build step\""
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "axios": "^1.12.2",
@@ -15,7 +18,7 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "google-auth-library": "^10.4.0",
-    "helmet": "^8.1.0",
+    "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.1",
     "multer": "^2.0.2",
@@ -23,5 +26,10 @@
     "nodemailer": "^7.0.6",
     "socket.io": "^4.8.1",
     "twilio": "^5.10.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "typescript": "^5.9.2"
   }
 }
